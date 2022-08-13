@@ -14,9 +14,9 @@ The input files and their expected content are :
 ## 2. Input file localisation_site.csv
 - latitude and longitude of studied site (°N and °O)
 - longitude of centre of the time zone of the studied site (°O)
-## 2. Input file RFUMAX.txt
+## 3. Input file RFUMAX.txt
 - Total available water in the root zone when it is fully saturated (mm)
-## 2. Input file crop_coef.txt
+## 4. Input file crop_coef.txt
 - Crop coefficient, defining the ratio between reference and potential evapotranspiration. The reference evapotranspiration corresponds to the potential evapotranspiration of a reference crop of height 12cm, albedo 0.23 and surface resistance of 70 s m-1
 
 
