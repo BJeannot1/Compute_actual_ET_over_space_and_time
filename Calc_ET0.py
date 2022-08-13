@@ -12,7 +12,7 @@ import time
 print ("**CALCULATION OF REFERENCE EVAPOTRANSPIRATION STARTING**")
 
 #Reading and processing time data
-Date0=np.array(column(lire_LAL_dada(path="Input/data_meteo.csv",nbr_lignes_header=1,separator=";"),0),str)
+Date0=np.array(column(Personal_file_read_function(path="Input/data_meteo.csv",nbr_lignes_header=1,separator=";"),0),str)
 Date_np=convert_date_str_array_to_NP_object(date_str=Date0,fmt="%d/%m/%Y %H:%M")
 foo=dt_of_numpy_breakdown(Date_np)
 day=column(foo,2)
@@ -39,31 +39,31 @@ Hours_at_middle_period_since_day_debut=np.array(Hours_at_middle_period_since_day
 t1=np.array(t1)
 
 #reading other data
-Patm=np.array(column(lire_LAL_dada(path="Input/data_meteo.csv",
+Patm=np.array(column(Personal_file_read_function(path="Input/data_meteo.csv",
     nbr_lignes_header=1,nbr_lignes_a_lire=0,
     separator=";"),1),float)
 
-HR=np.array(column(lire_LAL_dada(path="Input/data_meteo.csv",
+HR=np.array(column(Personal_file_read_function(path="Input/data_meteo.csv",
     nbr_lignes_header=1,nbr_lignes_a_lire=0,
     separator=";"),2),float)
 
-RG=np.array(column(lire_LAL_dada(path="Input/data_meteo.csv",
+RG=np.array(column(Personal_file_read_function(path="Input/data_meteo.csv",
     nbr_lignes_header=1,nbr_lignes_a_lire=0,
     separator=";"),3),float)
 
-Temp=np.array(column(lire_LAL_dada(path="Input/data_meteo.csv",
+Temp=np.array(column(Personal_file_read_function(path="Input/data_meteo.csv",
     nbr_lignes_header=1,nbr_lignes_a_lire=0,
     separator=";"),4),float)
 
-Vent10m=np.array(column(lire_LAL_dada(path="Input/data_meteo.csv",
+Vent10m=np.array(column(Personal_file_read_function(path="Input/data_meteo.csv",
     nbr_lignes_header=1,nbr_lignes_a_lire=0,
     separator=";"),5),float)
 
-Pbrute=np.array(column(lire_LAL_dada(path="Input/data_meteo.csv",
+Pbrute=np.array(column(Personal_file_read_function(path="Input/data_meteo.csv",
     nbr_lignes_header=1,nbr_lignes_a_lire=0,
     separator=";"),6),float)
 
-foo=np.array(column(lire_LAL_dada(path="Input/localisation_site.csv",
+foo=np.array(column(Personal_file_read_function(path="Input/localisation_site.csv",
     nbr_lignes_header=0,nbr_lignes_a_lire=0,
     separator=";"),1),float)
 lat_deg=foo[0]

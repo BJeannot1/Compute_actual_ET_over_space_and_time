@@ -1,10 +1,11 @@
+
 #THIS CODE CALCULATES HOURLY ACTUAL EVAPORATION AND HOURLY ACTUAL RECHARGE
 #Data needed :
 #-Atmospheric pressure
 #-Relative humidity
 #-Solar radiation (also called global radiation)
 #-Average hourly temperature
-#-Wind at 10m/s
+#-Wind at 10m
 #-Site location
 #-Total rain
 #-Crop coefficient (i.e. as defined in FAO irrigation and drainage report 56 )
@@ -14,12 +15,14 @@ from Utilities import *
 import numpy as np
 from datetime import datetime
 import time
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
 
 #Calculating reference evapotranspiration
 exec(open("Calc_ET0.py").read())
 print("**CALCULATION OF ACTUAL EVAPOTRANSPIRATION AND RECHARGE**")
 #reading and preprocessing of parameters
-Date0=np.array(column(lire_LAL_dada(path="Temp/ReferenceEvapotranspiration.csv",
+Date0=np.array(column(Personal_file_read_function(path="Temp/ReferenceEvapotranspiration.csv",
     nbr_lignes_header=1,nbr_lignes_a_lire=0,
     separator=";"),0),str)
 Date_np=convert_date_str_array_to_NP_object(date_str=Date0,fmt="%d/%m/%Y %H:%M")
@@ -29,11 +32,11 @@ day=column(foo,2)
 mois=column(foo,1)
 annee=column(foo,0)
 
-Total_rain=np.array(column(lire_LAL_dada(path="Input/data_meteo.csv",
+Total_rain=np.array(column(Personal_file_read_function(path="Input/data_meteo.csv",
     nbr_lignes_header=1,nbr_lignes_a_lire=0,
     separator=";"),6),float)
 
-ET0=np.array(column(lire_LAL_dada(path="Temp/ReferenceEvapotranspiration.csv",
+ET0=np.array(column(Personal_file_read_function(path="Temp/ReferenceEvapotranspiration.csv",
     nbr_lignes_header=1,nbr_lignes_a_lire=0,
     separator=";"),1),float)
 path_to_input=("Input/rfumax.txt")
@@ -43,7 +46,7 @@ ET0=ET0*Kc # Taking into account the corp coefficient
 nn=1 #legacy parameter
 
 
-#CALCULATAION OF RECHARGE BY THE METHOD FROM DOURADO & NETO
+#CALCULATION OF RECHARGE BY THE METHOD FROM DOURADO & NETO
 Recharge=np.full((nn,len(Total_rain)),0.0)
 for i0 in range(0,nn,1):
     #calcul de la recharge sur matrice par thornwaite et mather
@@ -113,6 +116,56 @@ for i0 in range(0,nn,1):
         h.write(str(ETR[i])+";")
         h.write(str(Recharge[i0,i])+"\n")
     h.close()
+
+
+    #PLOT OF ACTUAL AND POTENTIAL ET
+    fig, ax = plt.subplots()
+    fig, ax = plt.subplots()
+    #fig.suptitle("Modele d'interactions piezomètre/fracture et matrice\n",y=0.98)
+    fig.supylabel("Evapotranspiration (mm/h)",x=-0.0,size=14)
+    fig.supxlabel('Date',y=-0.13,size=14)
+    y1 =ET0
+    x1 =Date_np
+    ax.plot(x1, y1, label = "Potential",color="black")
+    y1 =ETR
+    x1 =Date_np
+    ax.plot(x1, y1, label = "Actual",color="red")
+    ax.legend(loc='lower left',bbox_to_anchor=(0.03, 0.8),ncol=1, prop={'size': 12})
+
+    ax.tick_params(axis='x', which='major', labelsize=12)
+    ax.tick_params(axis='y', which='major', labelsize=12)
+    ax.xaxis.set_major_formatter(mdates.DateFormatter('%m/%Y'))
+    ax.xaxis.set_major_locator(mdates.MonthLocator(bymonth=(range(1,13,1))))
+    ax.xaxis.set_minor_locator(mdates.MonthLocator([1,4,7,10]))
+    for label in ax.get_xticklabels(which='major'):label.set(rotation=90)
+    #ax.set_ylim(440,446)
+    plt.savefig("ET.png",bbox_inches='tight')
+    plt.close()
+
+    #PLOT OF TOTAL RAIN AND ACTUAL RECHARGE
+    fig, ax = plt.subplots()
+    fig, ax = plt.subplots()
+    #fig.suptitle("Modele d'interactions piezomètre/fracture et matrice\n",y=0.98)
+    fig.supylabel("Intensity (mm/h)",x=-0.0,size=14)
+    fig.supxlabel('Date',y=-0.13,size=14)
+    y1 =Total_rain
+    x1 =Date_np
+    ax.plot(x1, y1, label = "Total rain",color="black")
+    y1 =Recharge[i0,:]
+    x1 =Date_np
+    ax.plot(x1, y1, label = "Actual recharge",color="red")
+    ax.legend(loc='lower left',bbox_to_anchor=(0.03, 0.8),ncol=1, prop={'size': 12})
+
+    ax.tick_params(axis='x', which='major', labelsize=12)
+    ax.tick_params(axis='y', which='major', labelsize=12)
+    ax.xaxis.set_major_formatter(mdates.DateFormatter('%m/%Y'))
+    ax.xaxis.set_major_locator(mdates.MonthLocator(bymonth=(range(1,13,1))))
+    ax.xaxis.set_minor_locator(mdates.MonthLocator([1,4,7,10]))
+    for label in ax.get_xticklabels(which='major'):label.set(rotation=90)
+    #ax.set_ylim(440,446)
+    plt.savefig("Recharge.png",bbox_inches='tight')
+    plt.close()
+
 
 print("**ACTUAL EVAPOTRANSPIRATION AND RECHARGE CALCULATED SUCCESSFULLY**")
 time.sleep(1)

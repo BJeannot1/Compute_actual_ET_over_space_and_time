@@ -3,7 +3,7 @@ from datetime import datetime
 import numpy as np
 import re
 
-def lire_LAL_dada(path,nbr_lignes_a_lire=0,nbr_lignes_header=0,separator=r'[\s]+',replace_this=[''],replace_by=['']):  # lit en champ de potentiel en tous points. Hypothèse = noeuds renseignés de 1 à n
+def Personal_file_read_function(path,nbr_lignes_a_lire=0,nbr_lignes_header=0,separator=r'[\s]+',replace_this=[''],replace_by=['']):  # lit en champ de potentiel en tous points. Hypothèse = noeuds renseignés de 1 à n
     obs_file = open(path, "r")  # ouvrir 
     obs_strings = obs_file.readlines()  # lire 
     obs_file.close()  # fermer 
