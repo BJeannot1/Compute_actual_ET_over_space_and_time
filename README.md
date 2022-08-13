@@ -28,33 +28,23 @@ The input files and their expected content are :
 
 An example dataset is provided in the "Inputs" folder of this repository.
 
-# **II.	Bot playing the game**
-  ## 1. Principle
-The bot screens the color of specific pixels on each side of the tree, and uses these information in order to determine on what side of the tree to chop.
- ## 2.Required librairies
+# **II.	Running the code**
+  ## 1. Requirements
+The most updated versions of thefollowing libraries must be installed to run the code successfully :
+- numpy
+- datetime
+- re
+- matplotlib
 
-The bot uses the following python libraries :
-- selenium, win32api and win32 con, for automation purposes
-- numpy, for reading the file of parameters
-- pyautoguy, for saving images of the screen and analyzing pixels color
-- shutil, for deleting the folder that stores all the temporary images created when running the code
-
-## 3. Limitations
+ ## 2. Steps
+- Download the repository
+- Replace the example files in the "Inputs" folder by inputs files corresponding to your study site
+- Run "Main.py"
+- This generates two image outputs (ET.png and Recharge.png) and also a file Outputs.csv, displaying the computed hourly time series of actual evapotranspiration and recharge
   
-- This is a bot working on Windows only
-- You need Firefox installed
-- The default parameters are adapted only for a resolution of 1920*1080. You can change the values in the file parameters.txt to adapt the bot to other screen resolutions
-
-## 4. Performance
-Here is a video showing off the performance of the code :
-
-
-
-https://user-images.githubusercontent.com/67539849/182007653-762bd172-7fd7-4c6b-a4e7-acadfeda02ca.mov
-
-
-The bot's performance compared to others on the internet comes from the fact it uses a single image to decide about the next 5 to 6 moves, by screening different pixels at the same time, while other codes usually use a given image to decide only about the next move.
-
   ## 5. Cited bibliography
-  Dourado-Neto, D., Van Lier, QdJ., Metselaar, K., Reichardt, K., Nielsen, D.R., 2010. General procedure to initialize the cyclic soil water balance by the Thronthwaite and Mather method. Scientia Agricola 67, 87-95.
+  
+Allen, R.G., Pereira, L.S., Raes, D., Smith, M., 1998. Crop Evapotranspiration: Guidelines for Computing Crop Water Requirements. FAO Irrigation and Drainage Paper. Food and Agriculture Organization (FAO), Rome, Italy, 300 pp.
+
+Dourado-Neto, D., Van Lier, QdJ., Metselaar, K., Reichardt, K., Nielsen, D.R., 2010. General procedure to initialize the cyclic soil water balance by the Thronthwaite and Mather method. Scientia Agricola 67, 87-95.
   
