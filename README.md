@@ -2,6 +2,12 @@
 Calculation of reference and potential evapotranspiration follows the guidelines of FAO Irrigation and Drainage Paper No. 56, whose title is "Crop
 Evapotranspiration (guidelines for computing crop water requirements)". Calculation of actual evapotranspiration from potential evapotranspiration and recharge follows the method used by Dourado-Neto et al.(2010)
 
+Sample outputs from the code :
+
+![ET](https://user-images.githubusercontent.com/67539849/184498456-11d0aef9-1632-47f2-ad41-742d09c9e111.png)
+
+![Recharge](https://user-images.githubusercontent.com/67539849/184498460-26b35372-cd0c-48f3-bea3-282cf7cbf28e.png)
+
 # **I.	INPUTS**
 
 The input files and their expected content are :
