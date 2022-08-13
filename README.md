@@ -1,5 +1,6 @@
 ### This repository presents a python progam I made in order to compute actual evapotranspiration and actual recharge to the groundwater, at a hourly time step.
-Calculation of reference and potential evapotranspiration follows the guidelines of 
+Calculation of reference and potential evapotranspiration follows the guidelines of FAO Irrigation and Drainage Paper No. 56; titled "Crop
+Evapotranspiration (guidelines for computing crop water requirements)". Calculation of actual evapotranspiration from potential evapotranspiration follows the method used by Dourado-Neto et al.(2010)
 
 # **I.	INPUTS**
 
@@ -19,10 +20,7 @@ The input files and their expected content are :
 ## 4. Input file crop_coef.txt
 - Crop coefficient, defining the ratio between reference and potential evapotranspiration. The reference evapotranspiration corresponds to the potential evapotranspiration of a reference crop of height 12cm, albedo 0.23 and surface resistance of 70 s m-1
 
-
-![alt text](https://github.com/BJeannot1/Telegram-lumberjack-game-bot/blob/master/illustration.png?raw=true)
-
-The game can be played [here](https://tbot.xyz/lumber/#eyJ1IjoxMTgyMDUxMTQ2LCJuIjoiQmVuemkgSiIsImciOiJMdW1iZXJKYWNrIiwiY2kiOiIzOTc5NTU4MzQ2NjExMDk2MTc3IiwiaSI6IkJBQUFBQVFBQUFCS3EzUkcySjFGSTBsTEhYYyJ9NmUxMzA4ZjVmYTFjMmVhNWVkYTQ5NzEyNzVjYzJlN2I=&tgShareScoreUrl=tg%3A%2F%2Fshare_game_score%3Fhash%3D-D4pwwx_VnDH33gGq6bKWSjcRfgcUMFpmN4_ih_oUfc).
+An example dataset is provided in the "Inputs" folder of this repository.
 
 # **II.	Bot playing the game**
   ## 1. Principle
@@ -51,6 +49,6 @@ https://user-images.githubusercontent.com/67539849/182007653-762bd172-7fd7-4c6b-
 
 The bot's performance compared to others on the internet comes from the fact it uses a single image to decide about the next 5 to 6 moves, by screening different pixels at the same time, while other codes usually use a given image to decide only about the next move.
 
-  ## 5. Using the bot
-  Download the repository and run Main.py. That is it !
+  ## 5. Cited bibliography
+  Dourado-Neto, D., Van Lier, QdJ., Metselaar, K., Reichardt, K., Nielsen, D.R., 2010. General procedure to initialize the cyclic soil water balance by the Thronthwaite and Mather method. Scientia Agricola 67, 87-95.
   
