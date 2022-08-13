@@ -8,7 +8,7 @@ Sample outputs from the code :
 
 ![Recharge](https://user-images.githubusercontent.com/67539849/184498460-26b35372-cd0c-48f3-bea3-282cf7cbf28e.png)
 
-# **I.	INPUTS**
+# **I.	Inputs**
 
 The input files and their expected content are :
 ## 1. Input file data_meteo.csv
