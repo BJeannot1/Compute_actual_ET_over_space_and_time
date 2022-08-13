@@ -5,8 +5,8 @@ Calculation of reference and potential evapotranspiration follows the guidelines
 
 The input files and their expected content are :
   ## 1. Input file data_meteo.csv
--Hourly average temperature (°C)
--Hourly Wind speed at 10 m (m/s)
+- Hourly average temperature (°C)
+- Hourly Wind speed at 10 m (m/s)
 -Hourly Atmospheric pressure (hPa)
 -Hourly relative humidity (%)
 -Hourly total rain (mm/h)
