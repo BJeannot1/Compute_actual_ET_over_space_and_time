@@ -7,17 +7,17 @@ The input files and their expected content are :
   ## 1. Input file data_meteo.csv
 - Hourly average temperature (°C)
 - Hourly Wind speed at 10 m (m/s)
--Hourly Atmospheric pressure (hPa)
--Hourly relative humidity (%)
--Hourly total rain (mm/h)
--Hourly global radiation (also called solar radiation) in joules/cm²
+- Hourly Atmospheric pressure (hPa)
+- Hourly relative humidity (%)
+- Hourly total rain (mm/h)
+- Hourly global radiation (also called solar radiation) in joules/cm²
   ## 2. Input file localisation_site.csv
--latitude and longitude of studied site
--longitude of centre of the time zone of the studied site
+- latitude and longitude of studied site
+- longitude of centre of the time zone of the studied site
   ## 2. Input file RFUMAX.txt
--Total available water in the root zone when it is fully saturated
+- Total available water in the root zone when it is fully saturated
   ## 2. Input file crop_coef.txt
--Crop coefficient, defining the ratio between reference and potential evapotranspiration. The reference evapotranspiration corresponds to the potential evapotranspiration of a reference crop of height 12cm, albedo 0.23 and surface resistance of 70 s m-1
+- Crop coefficient, defining the ratio between reference and potential evapotranspiration. The reference evapotranspiration corresponds to the potential evapotranspiration of a reference crop of height 12cm, albedo 0.23 and surface resistance of 70 s m-1
 
 
 ![alt text](https://github.com/BJeannot1/Telegram-lumberjack-game-bot/blob/master/illustration.png?raw=true)
