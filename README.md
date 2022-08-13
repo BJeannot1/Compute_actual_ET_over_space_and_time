@@ -1,8 +1,24 @@
-### This repository presents a bot I made that plays the telgram lumberjack game. To the best of my knowledge, this is the best bot on the internet for this game (Average score around 1050).
+### This repository presents a python progam I made in order to compute actual evapotranspiration and actual recharge to the groundwater, at a hourly time step.
+Calculation of reference and potential evapotranspiration follows the guidelines of 
 
-# **I.	Quick description of the game**
+# **I.	INPUTS**
 
-In this game, the user plays as a lumberjack cutting an infinitely tall tree. The goal is to chop the highest possible amount of wood pieces before you run out of time, by choping on either the left or right side of the tree. However, while choping, the lumberjack must also dodge the failing tree branches, by standing on the opposite side of the tree. Touching a branch leads to a game over. An image from the game is shown below.
+The inputs required are :
+  ##Input file data_meteo.csv
+-Hourly average temperature (°C)
+-Hourly Wind speed at 10 m (m/s)
+-Hourly Atmospheric pressure (hPa)
+-Hourly relative humidity (%)
+-Hourly total rain (mm/h)
+-Hourly global radiation (also called solar radiation) in joules/cm²
+  ##Input file localisation_site.csv
+-latitude and longitude of studied site
+-longitude of centre of the time zone of the studied site
+  ##Input RFUMAX.txt
+-Total available water in the root zone when it is fully saturated
+  ##Input crop_coef.txt
+-Crop coefficient, defining the ratio between reference and potential evapotranspiration. The reference evapotranspiration corresponds to the potential evapotranspiration of a reference crop of height 12cm, albedo 0.23 and surface resistance of 70 s m-1
+
 
 ![alt text](https://github.com/BJeannot1/Telegram-lumberjack-game-bot/blob/master/illustration.png?raw=true)
 
