@@ -42,7 +42,7 @@ The most updated versions of thefollowing libraries must be installed to run the
 - Run "Main.py"
 - This generates two image outputs (ET.png and Recharge.png) and also a file Outputs.csv, displaying the computed hourly time series of actual evapotranspiration and recharge
   
-  ## 5. Cited bibliography
+ ## 3. Cited bibliography
   
 Allen, R.G., Pereira, L.S., Raes, D., Smith, M., 1998. Crop Evapotranspiration: Guidelines for Computing Crop Water Requirements. FAO Irrigation and Drainage Paper. Food and Agriculture Organization (FAO), Rome, Italy, 300 pp.
 
