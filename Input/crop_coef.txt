@@ -1,2 +1,0 @@
-CROP Coefficient (1 for reference grass)
-1.0
