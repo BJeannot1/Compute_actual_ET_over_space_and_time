@@ -52,7 +52,7 @@ The most updated versions of the following libraries must be installed to run th
 Running the code generates several outputs :
 - An Output.nc netcdf file, containing distributed hourly time series of potential and actual ET, of total precipitation and actual recharge to the groundwater;
 - A map displaying the spatial repartition of actual evapotranspiration (cf. introduction);
-- 2 plots showing time series respectively of potential VS actual evapotranspiration and total rain VS actual recharge (cf. introduction). By default, the time series is represented for the pixel at the bottom-left of the domain, but it can be modified very easily (arguments latindex and lon index of the drawtimeseries function.
+- 2 plots showing time series respectively of potential VS actual evapotranspiration and total rain VS actual recharge (cf. introduction). By default, the time series is represented for the pixel at the bottom-left of the domain, but it can be modified very easily (cf. arguments latindex and lonindex of the drawtimeseries function).
   
 # **IV.	Cited bibliography**
   
