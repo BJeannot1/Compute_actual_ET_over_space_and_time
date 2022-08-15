@@ -19,8 +19,8 @@ Evapotranspiration (guidelines for computing crop water requirements)". Calculat
 
 # **I.	Inputs**
 
-All the inputs are to be found in a single netCDF file. These inputs are the following :
-- Latitudes (in °N) ans longitudes (in °W)
+All the inputs are to be found in a single netCDF file, named "Inputs.nc". These inputs are the following :
+- Latitudes (in °N) and longitudes (in °W)
 - Longitude of the centre of the time zone  in °W)
 - Time, expressed in the following way : %d/%m/%Y %H:%M
 - Distributed hourly average temperature (°C)
@@ -32,7 +32,7 @@ All the inputs are to be found in a single netCDF file. These inputs are the fol
 - Distributed hourly total available water in the root zone in conditions of full saturation (mm)
 - Distirbuted crop coefficient, defining the ratio between reference and potential evapotranspiration. The reference evapotranspiration corresponds to the potential evapotranspiration of a reference crop of height 12cm, albedo 0.23 and surface resistance of 70 s m-1
 
-An example dataset is provided in the "Inputs" folder of this repository. Refer to this file for more details about input formatting.
+An example dataset is provided in this repository. Refer to this file for more details about input formatting.
 
 # **II.	Running the code**
   ## 1. Requirements
