@@ -1,4 +1,7 @@
 ### This repository presents a python progam I made in order to compute actual evapotranspiration and actual recharge to the groundwater, at a hourly time step and in a spatially distributed way.
+
+# **I.	Introduction**
+
 Calculation of reference and potential evapotranspiration follows the guidelines of FAO Irrigation and Drainage Paper No. 56, whose title is "Crop
 Evapotranspiration (guidelines for computing crop water requirements)". Calculation of actual evapotranspiration from potential evapotranspiration and recharge follows the method used by Dourado-Neto et al.(2010)
 
@@ -10,7 +13,7 @@ Evapotranspiration (guidelines for computing crop water requirements)". Calculat
 - Comparaison of potential and actual evapotranspiration at given coordinates for year 2016, based on a synthetic dataset :
 
 ![Output_Potential ET_Actual ET](https://user-images.githubusercontent.com/67539849/184679733-72a50352-8cb0-4bbb-831a-2d7732066ad6.png)
-- Comparaison of total rain and actual gorundwater recharge given coordinates for year 2016, based on a synthetic dataset :
+- Comparaison of total rain and actual gorundwater recharge at given coordinates for year 2016, based on a synthetic dataset :
 
 ![Output_Total rain_Recharge](https://user-images.githubusercontent.com/67539849/184679737-ac805174-6f44-4388-b0a8-2af7a938247e.png)
 
