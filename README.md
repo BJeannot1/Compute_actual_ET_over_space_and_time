@@ -3,10 +3,11 @@ Calculation of reference and potential evapotranspiration follows the guidelines
 Evapotranspiration (guidelines for computing crop water requirements)". Calculation of actual evapotranspiration from potential evapotranspiration and recharge follows the method used by Dourado-Neto et al.(2010)
 
 Sample outputs from the code :
+![map_3500](https://user-images.githubusercontent.com/67539849/184679707-7fa19ae4-24de-42d8-a297-5ed89b4b0669.png)
+![Output_Potential ET_Actual ET](https://user-images.githubusercontent.com/67539849/184679733-72a50352-8cb0-4bbb-831a-2d7732066ad6.png)
+![Output_Total rain_Recharge](https://user-images.githubusercontent.com/67539849/184679737-ac805174-6f44-4388-b0a8-2af7a938247e.png)
 
-![ET](https://user-images.githubusercontent.com/67539849/184498456-11d0aef9-1632-47f2-ad41-742d09c9e111.png)
 
-![Recharge](https://user-images.githubusercontent.com/67539849/184498460-26b35372-cd0c-48f3-bea3-282cf7cbf28e.png)
 
 # **I.	Inputs**
 
