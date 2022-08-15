@@ -2,7 +2,8 @@
 Calculation of reference and potential evapotranspiration follows the guidelines of FAO Irrigation and Drainage Paper No. 56, whose title is "Crop
 Evapotranspiration (guidelines for computing crop water requirements)". Calculation of actual evapotranspiration from potential evapotranspiration and recharge follows the method used by Dourado-Neto et al.(2010)
 
-Sample outputs from the code :
+<sub> Sample outputs from the code : </sub>
+
 Computed actual evapotranspiration at a given date over an area covering parts of France, Germany, Italy, and Switzeland, based on a synthetic dataset :
 
 ![map_3500](https://user-images.githubusercontent.com/67539849/184679707-7fa19ae4-24de-42d8-a297-5ed89b4b0669.png)
