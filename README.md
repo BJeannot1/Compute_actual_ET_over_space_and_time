@@ -54,7 +54,7 @@ Running the code generates several outputs :
 - A map displaying the spatial repartition of actual evapotranspiration (cf. introduction);
 - 2 plots showing time series respectively of potential VS actual evapotranspiration and total rain VS actual recharge (cf. introduction).
   
- ## 3. Cited bibliography
+# **III.	Cited bibliography**
   
 Allen, R.G., Pereira, L.S., Raes, D., Smith, M., 1998. Crop Evapotranspiration: Guidelines for Computing Crop Water Requirements. FAO Irrigation and Drainage Paper. Food and Agriculture Organization (FAO), Rome, Italy, 300 pp.
 
