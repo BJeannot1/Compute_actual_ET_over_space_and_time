@@ -10,7 +10,7 @@ Evapotranspiration (guidelines for computing crop water requirements)". Calculat
 - Computed actual evapotranspiration at a given date over an area covering parts of France, Germany, Italy, and Switzeland, based on a synthetic dataset :
 
 ![map_3500](https://user-images.githubusercontent.com/67539849/184679707-7fa19ae4-24de-42d8-a297-5ed89b4b0669.png)
-- Comparison of potential and actual evapotranspiration at given coordinates for year 2016, based on a synthetic dataset. In summer, potential ET grows wbecause temperatures are higher, but actual ET drops because the root zone is too dry :
+- Comparison of potential and actual evapotranspiration at given coordinates for year 2016, based on a synthetic dataset. Potential ET is the highest in summer because of higher temperatures, but actual ET drops because the root zone is too dry at that period of the year :
 
 ![Output_Potential ET_Actual ET](https://user-images.githubusercontent.com/67539849/184679733-72a50352-8cb0-4bbb-831a-2d7732066ad6.png)
 - Comparison of total rain and actual gorundwater recharge at given coordinates for year 2016, based on a synthetic dataset :
