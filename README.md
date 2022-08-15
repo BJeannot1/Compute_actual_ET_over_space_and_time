@@ -17,7 +17,7 @@ Evapotranspiration (guidelines for computing crop water requirements)". Calculat
 
 ![Output_Total rain_Recharge](https://user-images.githubusercontent.com/67539849/184679737-ac805174-6f44-4388-b0a8-2af7a938247e.png)
 
-# **I.	Inputs**
+# **II.	Inputs**
 
 All the inputs are to be found in a single netCDF file, named "Inputs.nc". These inputs are the following :
 - Latitudes (in °N) and longitudes (in °W)
@@ -34,7 +34,7 @@ All the inputs are to be found in a single netCDF file, named "Inputs.nc". These
 
 An example dataset is provided in this repository. Refer to this file for more details about input formatting.
 
-# **II.	Running the code**
+# **III.	Running the code**
   ## 1. Requirements
 The most updated versions of the following libraries must be installed to run the code successfully :
 - netCDF4
