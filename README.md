@@ -3,7 +3,7 @@
 # **I.	Introduction**
 
 Calculation of reference and potential evapotranspiration follows the guidelines of FAO Irrigation and Drainage Paper No. 56, whose title is "Crop
-Evapotranspiration (guidelines for computing crop water requirements)". Calculation of actual evapotranspiration from potential evapotranspiration and recharge follows the method used by Dourado-Neto et al.(2010)
+Evapotranspiration (guidelines for computing crop water requirements)". Calculation of actual evapotranspiration from potential evapotranspiration and recharge follows the method used by Dourado-Neto et al.(2010).
 
 **Sample outputs from the code, using the example input file :**
 
@@ -20,17 +20,17 @@ Evapotranspiration (guidelines for computing crop water requirements)". Calculat
 # **II.	Inputs**
 
 All the inputs are to be found in a single netCDF file, named "Inputs.nc". These inputs are the following :
-- Latitudes (in °N) and longitudes (in °W)
-- Longitude of the centre of the time zone  in °W)
-- Time, expressed in the following way : %d/%m/%Y %H:%M
-- Distributed hourly average temperature (°C)
-- Distributed hourly Wind speed at 10 m (m/s)
-- Distirbuted hourly Atmospheric pressure (hPa)
-- Distributed hourly relative humidity (%)
-- Distirbuted hourly total rain (mm/h)
-- Distributed hourly global radiation (also called solar radiation) in joules/cm²
-- Distributed hourly total available water in the root zone in conditions of full saturation (mm)
-- Distirbuted crop coefficient, defining the ratio between reference and potential evapotranspiration. The reference evapotranspiration corresponds to the potential evapotranspiration of a reference crop of height 12cm, albedo 0.23 and surface resistance of 70 s m-1
+- Latitudes (in °N) and longitudes (in °W);
+- Longitude of the centre of the time zone  in °W);
+- Time, expressed in the following way : "%d/%m/%Y %H:%M";
+- Distributed hourly average temperature (°C);
+- Distributed hourly Wind speed at 10 m (m/s);
+- Distirbuted hourly Atmospheric pressure (hPa);
+- Distributed hourly relative humidity (%);
+- Distirbuted hourly total rain (mm/h);
+- Distributed hourly global radiation (also called solar radiation) in joules/cm²;
+- Distributed hourly total available water in the root zone in conditions of full saturation (mm);
+- Distirbuted crop coefficient, defining the ratio between reference and potential evapotranspiration. The reference evapotranspiration corresponds to the potential evapotranspiration of a reference crop of height 12cm, albedo 0.23 and surface resistance of 70 s m-1.
 
 An example dataset is provided in this repository. Refer to this file for more details about input formatting.
 
@@ -44,9 +44,9 @@ The most updated versions of the following libraries must be installed to run th
 - matplotlib
 
  ## 2. Steps
-- Download the repository
-- Replace the example input file by a netCDF file describing the settings of your test case.
-- Run "Main.py"
+- Download the repository;
+- Replace the example input file by a netCDF file describing the settings of your test case;
+- Run "Main.py".
 
  ## 3. Outputs
 Running the code generates several outputs :
