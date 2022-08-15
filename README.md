@@ -42,6 +42,7 @@ The most updated versions of the following libraries must be installed to run th
 - datetime
 - re
 - matplotlib
+- basemap
 
  ## 2. Steps
 - Download the repository;
