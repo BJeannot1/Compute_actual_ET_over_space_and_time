@@ -5,10 +5,13 @@ Evapotranspiration (guidelines for computing crop water requirements)". Calculat
 **Sample outputs from the code :**
 
 - Computed actual evapotranspiration at a given date over an area covering parts of France, Germany, Italy, and Switzeland, based on a synthetic dataset :
+
 ![map_3500](https://user-images.githubusercontent.com/67539849/184679707-7fa19ae4-24de-42d8-a297-5ed89b4b0669.png)
 - Comparaison of potential and actual evapotranspiration at given coordinates for year 2016, based on a synthetic dataset :
+
 ![Output_Potential ET_Actual ET](https://user-images.githubusercontent.com/67539849/184679733-72a50352-8cb0-4bbb-831a-2d7732066ad6.png)
 - Comparaison of total rain and actual gorundwater recharge given coordinates for year 2016, based on a synthetic dataset :
+
 ![Output_Total rain_Recharge](https://user-images.githubusercontent.com/67539849/184679737-ac805174-6f44-4388-b0a8-2af7a938247e.png)
 
 # **I.	Inputs**
